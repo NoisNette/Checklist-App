@@ -28,6 +28,7 @@ class _TextInputWidgetState extends State<TextInputWidget> {
   Widget build(BuildContext context) {
     return TextField(
         controller: this.controller,
+        textCapitalization: TextCapitalization.sentences,
         decoration: InputDecoration(
             prefixIcon: Icon(Icons.textsms),
             labelText: 'Enter an item: ',
