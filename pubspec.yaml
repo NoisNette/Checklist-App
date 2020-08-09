@@ -1,5 +1,7 @@
 name: checklist_app
-description: A new Flutter project.
+description: Custom Checklist app
+author: David Mihić <david.mihic@gmail.com>
+homepage: https://github.com/NoisNette/Checklist-App.git
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
