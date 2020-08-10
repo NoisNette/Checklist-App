@@ -18,18 +18,20 @@ class _ItemListState extends State<ItemList> {
         itemBuilder: (context, index) {
           var item = this.widget.listItems[index];
           return Card(
-              child: CheckboxListTile(
-            value: item.done,
-            onChanged: (bool value) {
-              setState(() {
-                item.done = value;
-              });
-            },
-            title: Text(item.body,
-                style: TextStyle(
-                    color: item.done ? Colors.grey : Colors.black,
-                    decoration: item.done ? TextDecoration.lineThrough : null)),
-          ));
+            child: CheckboxListTile(
+              value: item.done,
+              onChanged: (bool value) {
+                setState(() {
+                  item.done = value;
+                });
+              },
+              title: Text(item.body,
+                  style: TextStyle(
+                      color: item.done ? Colors.grey : Colors.black,
+                      decoration:
+                          item.done ? TextDecoration.lineThrough : null)),
+            ),
+          );
         });
   }
 }

@@ -27,15 +27,17 @@ class _TextInputWidgetState extends State<TextInputWidget> {
   @override
   Widget build(BuildContext context) {
     return TextField(
-        controller: this.controller,
-        textCapitalization: TextCapitalization.sentences,
-        decoration: InputDecoration(
-            prefixIcon: Icon(Icons.textsms),
-            labelText: 'Enter an item: ',
-            suffixIcon: IconButton(
-                icon: Icon(Icons.add),
-                splashColor: Colors.blue,
-                tooltip: 'Submit',
-                onPressed: this.click)));
+      controller: this.controller,
+      textCapitalization: TextCapitalization.sentences,
+      decoration: InputDecoration(
+        prefixIcon: Icon(Icons.textsms),
+        labelText: 'Enter an item: ',
+        suffixIcon: IconButton(
+            icon: Icon(Icons.add),
+            splashColor: Colors.blue,
+            tooltip: 'Submit',
+            onPressed: this.click),
+      ),
+    );
   }
 }

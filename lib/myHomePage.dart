@@ -23,18 +23,26 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('Checklist App'), actions: <Widget>[
+      appBar: AppBar(
+        title: Text('Checklist App'),
+        actions: <Widget>[
           IconButton(
               icon: Icon(Icons.restore),
               onPressed: () {
                 setState(() {
                   this.items.clear();
                 });
-              })
-        ]),
-        body: Column(children: <Widget>[
-          Expanded(child: ItemList(this.items)),
-          TextInputWidget(this.newItem)
-        ]));
+              }),
+        ],
+      ),
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            child: ItemList(this.items),
+          ),
+          TextInputWidget(this.newItem),
+        ],
+      ),
+    );
   }
 }
