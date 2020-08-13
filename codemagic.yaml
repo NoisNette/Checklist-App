@@ -6,10 +6,10 @@ workflows:
         name: iOS App with Flutter Module
         environment:
             vars:
-                FLUTTER_MODULE_DIR: "{{ ADD YOUR PATH HERE }}"
-                HOST_IOS_APP_DIR: "{{ ADD YOUR PATH HERE }}"
-                XCODE_PROJECT: "{{ ADD WORKSPACE NAME HERE }}"
-                XCODE_SCHEME: "{{ ADD SCHEME NAME HERE }}"
+                FLUTTER_MODULE_DIR: "C:\Users\Marija Surić Mihić\Desktop\Davidove stvari\Programi\Flutter\flutter\bin"
+                HOST_IOS_APP_DIR: "D:\David\Flutter\checklist_app\ios"
+                XCODE_PROJECT: "D:\David\Flutter\checklist_app\ios\Runner.xcodeproj"
+                XCODE_SCHEME: "D:\David\Flutter\checklist_app\ios\Runner"
             xcode: edge
             cocoapods: default
             flutter: stable
