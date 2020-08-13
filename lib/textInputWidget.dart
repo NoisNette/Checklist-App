@@ -27,11 +27,13 @@ class _TextInputWidgetState extends State<TextInputWidget> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      textInputAction: TextInputAction.done,
+      onSubmitted: (value) => this.click(),
       controller: this.controller,
       textCapitalization: TextCapitalization.sentences,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.textsms),
-        labelText: 'Enter an item: ',
+        prefixIcon: Icon(Icons.chat_bubble),
+        labelText: 'Enter an item:',
         suffixIcon: IconButton(
             icon: Icon(Icons.add),
             splashColor: Colors.blue,

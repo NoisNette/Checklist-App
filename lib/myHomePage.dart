@@ -24,15 +24,21 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Checklist App'),
+        title: Tooltip(
+          message: 'Checklist App',
+          child: Text('Checklist App'),
+        ),
         actions: <Widget>[
-          IconButton(
-              icon: Icon(Icons.restore),
-              onPressed: () {
-                setState(() {
-                  this.items.clear();
-                });
-              }),
+          Tooltip(
+            message: 'Clear items',
+            child: IconButton(
+                icon: Icon(Icons.restore),
+                onPressed: () {
+                  setState(() {
+                    this.items.clear();
+                  });
+                }),
+          ),
         ],
       ),
       body: Column(
@@ -40,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Expanded(
             child: ItemList(this.items),
           ),
+          Divider(thickness: 1, height: 0, color: Colors.grey),
           TextInputWidget(this.newItem),
         ],
       ),
