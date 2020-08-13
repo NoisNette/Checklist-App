@@ -8,8 +8,8 @@ workflows:
             vars:
                 FLUTTER_MODULE_DIR: "C:\Users\Marija Surić Mihić\Desktop\Davidove stvari\Programi\Flutter\flutter\bin"
                 HOST_IOS_APP_DIR: "D:\David\Flutter\checklist_app\ios"
-                XCODE_PROJECT: "D:\David\Flutter\checklist_app\ios\Runner.xcodeproj"
-                XCODE_SCHEME: "D:\David\Flutter\checklist_app\ios\Runner"
+                XCODE_PROJECT: "D:\David\Flutter\checklist_app\ios\Runner"
+                XCODE_SCHEME: "D:\David\Flutter\checklist_app\ios\Runner.xcodeproj\xcshareddata\xcschemes\Runner.xcscheme"
             xcode: edge
             cocoapods: default
             flutter: stable
